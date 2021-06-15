@@ -7,7 +7,9 @@ function Comments(props) {
     return (<>
         {comments.map((u, key) => (
             <Card key={key}>
-                <Card.Body>{u.content}</Card.Body>
+                <Card.Body>
+                    <pre style={{fontSize:"1.2em"}}>{u.content}</pre>
+                </Card.Body>
             </Card>
         ))}
         
