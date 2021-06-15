@@ -109,7 +109,7 @@ function LoginModal(props) {
                             }
                         })
                     }}>
-                        送出
+                        確定
                     </Button>
                 </Modal.Footer>
             </Modal>

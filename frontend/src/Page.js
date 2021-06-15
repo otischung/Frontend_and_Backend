@@ -11,7 +11,7 @@ function Page(porps) {
     const [inpCmt, setInpCmt] = useState("")
     const [comments, setComments] = useState([{
         author: { id: -2, username: "admin" },
-        content: "載入中，請稍後...",
+        content: "請登入以顯示留言",
         created_at: "",
         id: -2
     }])
@@ -60,7 +60,7 @@ function Page(porps) {
             <Navbar bg="dark" variant="dark">
                 <Nav className="mr-auto">
                     <Navbar.Brand href="#home">
-                        Yet Another Homepage
+                        吳昇程設留言區
                     </Navbar.Brand>
                 </Nav>
                 {btn}
@@ -74,7 +74,7 @@ function Page(porps) {
                     <Form.Control
                         value={inpCmt}
                         as="textarea"
-                        placeholder="寫點什麼..."
+                        placeholder="write something..."
                         style={{ height: '200px' }}
                         onChange={(e) => {
                             setInpCmt(e.target.value)
